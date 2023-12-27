@@ -25,13 +25,12 @@ export default function AddSpeedDial(props){
     return (
         <Box sx={{height:"100vh", transform: 'translateZ(0px)', flexGrow: 1, position:"fixed", bottom:"16px", right:"16px", zIndex:1001}}>
             <SpeedDial
-                ariaLabel="SpeedDial tooltip example"
+                ariaLabel="Új pizza hozzáadása"
                 sx={{ position: 'absolute', bottom: 16, right: 16 }}
                 icon={<AddOutlined />}
                 onClose={handleClose}
                 onOpen={handleOpen}
-                open={props.isBackdropOpen}
-            >
+                open={props.isBackdropOpen}>
                 {actions.map((action) => (
                     <SpeedDialAction
                         key={action.name}
