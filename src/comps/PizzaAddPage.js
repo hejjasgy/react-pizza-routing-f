@@ -221,8 +221,8 @@ export default function PizzaAddPage(props){
                                 value={getPizza.isGlutenFree}
                                 label="Glutén-mentes?"
                                 onChange={handleChange}>
-                                <MenuItem value={0}>Igen</MenuItem>
-                                <MenuItem value={1}>Nem</MenuItem>
+                                <MenuItem value={0}>Nem</MenuItem>
+                                <MenuItem value={1}>Igen</MenuItem>
                             </Select>
                         </div>
 

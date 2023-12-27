@@ -60,7 +60,7 @@ function App(){
             <Drawer open={isDrawerOpen} onClose={toggleDrawer}>
                 <List>
                     <ListItem key={"homePage"}>
-                        <ListItemButton onClick={()=>{navigation("/")}}>
+                        <ListItemButton onClick={()=>{navigation("/");setDrawerOpen(false)}}>
                             <ListItemIcon>
                                 <HomeOutlined />
                             </ListItemIcon>
@@ -68,7 +68,7 @@ function App(){
                         </ListItemButton>
                     </ListItem>
                     <ListItem key={"newPizza"}>
-                        <ListItemButton onClick={()=>{navigation("uj-pizza")}}>
+                        <ListItemButton onClick={()=>{navigation("uj-pizza");setDrawerOpen(false)}}>
                             <ListItemIcon>
                                 <FiberNewOutlined />
                             </ListItemIcon>
@@ -76,7 +76,7 @@ function App(){
                         </ListItemButton>
                     </ListItem>
                     <ListItem key={"newRandomPizza"}>
-                        <ListItemButton onClick={()=>{navigation("uj-pizza/random")}}>
+                        <ListItemButton onClick={()=>{navigation("uj-pizza/random");setDrawerOpen(false)}}>
                             <ListItemIcon>
                                 <CasinoOutlined />
                             </ListItemIcon>
